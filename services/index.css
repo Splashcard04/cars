@@ -45,3 +45,8 @@
     color: blue;
     font-size: small;
 }
+
+.link {
+    color:white;
+    text-emphasis: none;
+}
