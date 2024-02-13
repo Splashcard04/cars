@@ -1,0 +1,44 @@
+#p {
+    color: white;
+}
+
+#header {
+    color: yellow;
+        text-align: center;
+        transition: letter-spacing 1s, color 1s;
+    }
+   
+    #header:hover {
+    cursor: pointer;
+    letter-spacing: 3px
+    }
+   
+    .button-container {
+        border-style: solid;
+        border-color: yellow;
+        background-color: black;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        border-radius: 10px;
+        transition: scale 1s, background-color 1s;
+       
+    }
+   
+    .button-container:hover {
+        scale: 101%;
+        background-color: rgb(15, 15, 15);
+    }
+   
+   
+    #options {
+        cursor: pointer;
+    color: yellow;
+        padding-top: 20px;
+        transition: letter-spacing 1s
+    }
+   
+    #options:hover {
+    letter-spacing: 5px
+    }
