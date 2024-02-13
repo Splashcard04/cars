@@ -1,0 +1,86 @@
+
+          .info-container {
+              background-color: black;
+              border-style: solid;
+              border-color: yellow;
+              width: 60%;
+              text-align: center;
+              margin: auto;
+              margin-top: 10%;
+              border-radius: 10px;
+              transition: scale 1s, background-color 1s;
+              padding: 20px
+          }
+         
+          .info-container:hover {
+          scale: 102%;
+          background-color: rgb(30, 30, 30);
+          }
+         
+          #header {
+      color: yellow;
+          text-align: center;
+          transition: letter-spacing 1s, color 1s;
+      }
+     
+      #header:hover {
+      cursor: pointer;
+      letter-spacing: 3px
+      }
+         
+          #h2 {
+          color: yellow;
+          text-align: center;
+          transition: letter-spacing 1s, color 1s;
+          }
+         
+          #h2:hover {
+      letter-spacing: 3px
+      }
+         
+          #what {
+              cursor: pointer;
+              width: 80%;
+              padding: 10px;
+              border-radius: 10px;
+              font-size: 20px;
+              margin: 10px;
+              margin-bottom: 20px;
+              background-color: rgb(25, 150, 0);
+              border: 0px;
+              transition: scale 1s, background-color 1s
+          }
+         
+          #what:hover {
+          scale: 105%;
+              background-color: rgb(100, 200, 0)
+          }
+         
+          #mail {
+          cursor: pointer;
+              width: 80%;
+              padding: 10px;
+              border-radius: 10px;
+              font-size: 20px;
+              margin: 10px;
+              margin-bottom: 20px;
+              background-color: rgb(200, 25, 0);
+              border: 0px;
+              transition: scale 1s, background-color 1s
+          }
+         
+          #mail:hover {
+          scale: 105%;
+              background-color: rgb(400, 50, 0)
+          }
+         
+          #footer {
+          color: white;
+              font-size: small
+          }
+         
+#footer2 {
+    color: blue;
+    font-size: small;
+    text-align: center;
+}

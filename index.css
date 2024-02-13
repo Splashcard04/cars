@@ -1,0 +1,125 @@
+            #header {
+            color: yellow;
+                text-align: center;
+                transition: letter-spacing 1s, color 1s;
+            }
+           
+            #header:hover {
+            cursor: pointer;
+            letter-spacing: 3px
+            }
+           
+            .button-container {
+                border-style: solid;
+                border-color: yellow;
+                background-color: black;
+                width: 60%;
+                text-align: center;
+                margin: auto;
+                margin-top: 10%;
+                border-radius: 10px;
+                transition: scale 1s, background-color 1s;
+               
+            }
+           
+            .button-container:hover {
+                scale: 101%;
+                background-color: rgb(15, 15, 15);
+            }
+           
+           
+            #options {
+                cursor: pointer;
+            color: yellow;
+                padding-top: 20px;
+                transition: letter-spacing 1s
+            }
+           
+            #options:hover {
+            letter-spacing: 5px
+            }
+           
+            #schedule {
+            cursor: pointer;
+            width: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 10px;
+                background-color: green;
+                border: 0px;
+                transition: scale 1s, background-color 1s
+            }
+
+            #services {
+                cursor: pointer;
+                width: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 10px;
+                background-color: rgb(24, 211, 202);
+                border: 0px;
+                transition: scale 1s, background-color 1s
+            }
+           
+            #contact {
+                cursor: pointer;
+                width: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 10px;
+                background-color: rgb(0, 51, 153);
+                border: 0px;
+                transition: scale 1s, background-color 1s
+            }
+           
+            #payment {
+            cursor: pointer;
+            width: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 10px;
+                background-color: rgb(255, 153, 0);
+                border: 0px;
+                transition: scale 1s, background-color 1s
+            }
+           
+            #about {
+            cursor: pointer;
+            width: 80%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 10px;
+                margin-bottom: 20px;
+                background-color: rgb(204, 0, 0);
+                border: 0px;
+                transition: scale 1s, background-color 1s
+            }
+           
+            #schedule:hover {
+            background-color: lightgreen
+            }
+            
+            #services:hover {
+                background-color: rgb(142, 255, 249); ;
+            }
+           
+            #contact:hover {
+            background-color: rgb(24, 116, 146)
+            }
+           
+            #payment:hover {
+            background-color: yellow
+            }
+           
+            #about:hover {
+            background-color: rgb(255, 80, 0)
+            }
+           
+            #schedule:hover, #contact:hover, #payment:hover, #about:hover, #services:hover {
+                scale: 105%
+            }
