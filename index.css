@@ -99,6 +99,19 @@
                 border: 0px;
                 transition: scale 1s, background-color 1s
             }
+
+            #how {
+                cursor: pointer;
+                width: 80%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    margin: 10px;
+                    margin-bottom: 20px;
+                    background-color: rgb(143, 0, 124);
+                    border: 0px;
+                    transition: scale 1s, background-color 1s
+            }
            
             #schedule:hover {
             background-color: lightgreen
@@ -119,7 +132,11 @@
             #about:hover {
             background-color: rgb(255, 80, 0)
             }
+
+            #how:hover {
+                background-color: rgb(183, 0, 158);
+            }
            
-            #schedule:hover, #contact:hover, #payment:hover, #about:hover, #services:hover {
+            #schedule:hover, #contact:hover, #payment:hover, #about:hover, #services:hover, #how:hover {
                 scale: 105%
             }
