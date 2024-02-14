@@ -42,3 +42,19 @@
     #options:hover {
     letter-spacing: 5px
     }
+
+    #sedan {
+        color: yellow;
+        font-size: xx-large;
+        transition: letter-spacing 1s;
+        text-align: center;
+    }
+
+    #sedan:hover {
+        letter-spacing: 3px;
+    }
+
+    #sedanp {
+        color: white;
+        text-align: center;
+    }
