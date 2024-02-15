@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../defaults/defaults.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <h1 id="header">Clean Cars Olympia : Order Confirmation</h1>
+
+    <div class="radio-container">
+        <h2 id="type">Vehicle Type</h2>
+        <p id="vehicle"></p>
+
+        <h2 id="type">Service Type</h2>
+        <p id="service"></p>
+
+        <h2 id="type">Order Total</h2>
+        <p id="totalp"></p>
+
+        <button id="submit">Confirm Order</button>
+    </div>
+
+    <script>
+
+        const submit = document.getElementById('submit')
+
+        const prices = {
+            sedan: {
+                interior: 120,
+                exterior: 80,
+                both: 160
+            },
+            crossover: {
+                interior: 130,
+                exterior: 90,
+                both: 170
+            },
+            suv: {  
+                interior: 150,
+                exterior: 120,
+                both: 190
+            }
+        }
+
+        window.onload = function() {
+
+            const service = new URLSearchParams(window.location.search).get('service')
+            const vehicle = new URLSearchParams(window.location.search).get('vehicle')
+            const number = new URLSearchParams(window.location.search).get('number')
+
+            const total = prices[vehicle][service]
+
+            document.getElementById('vehicle').innerText = vehicle
+            document.getElementById('service').innerText = service
+            document.getElementById('totalp').innerText = `$${total}`
+        }
+
+        const test = document.getElementById('test')
+
+        const service = new URLSearchParams(window.location.search).get('service')
+        const vehicle = new URLSearchParams(window.location.search).get('vehicle')
+        const number = new URLSearchParams(window.location.search).get('number')
+
+        submit.addEventListener('click', function() {
+            window.location.href = `./confirmed.html?service=${service}&vehicle=${vehicle}&number=${number}`
+        })
+
+    </script>
+</body>
+</html>

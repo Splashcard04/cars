@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <script >
+        function open2(url){
+            window.location.href = url;
+        }
+    </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +21,7 @@
     <div class='button-container'>
            
         
-        <h2 id="sedan" onclick="open('../how/index.html?car=sedan')">Sedan</h2>
+        <h2 id="sedan">Sedan</h2>
         
         <p id="sedanp">
             Interior Deep Clean : $120 <br> <br>
@@ -22,7 +29,7 @@
             Both: $160
         </p>
         
-        <h2 id="crossover" onclick="open('../how/index.html?car=crossover')">Crossover</h2>
+        <h2 id="crossover">Crossover</h2>
         
         <p id="crossoverp">
             Interior Deep Clean : $130 <br> <br>
@@ -30,13 +37,15 @@
             Both: $170
         </p>
         
-        <h2 id="suv" onclick="open('../how/index.html?car=suv')">Suv / Truck</h2>
+        <h2 id="suv">Suv / Truck</h2>
         
         <p id="suvp">
             Interior Deep Clean : $150 <br> <br>
             Exterior Clean with Wheel and Tire Shine : $120<br> <br>
             Both: $190
         </p>
+
+        <button id="order" onclick="open('../order/index.html')">Place An Order</button>
     </div>
 
 </body>

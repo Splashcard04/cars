@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../defaults/defaults.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 id="header">Clean Cars Olympia : Order</h1>
+
+    <div class='radio-container'>
+        <form action="./ordered.html" id="form">
+            <h2 id="type">Vehicle Type</h2>
+            <input type="radio" id="sedan" name="vehicle" value="sedan" class="radio">
+            <label for="sedan" class="label">Sedan</label> <br><br>
+            <input type="radio" id="crossover" name="vehicle" value="crossover" class="radio">
+            <label for="crossover" class="label">Crossover</label> <br><br>
+            <input type="radio" id="suv" name="vehicle" value="suv" class="radio">
+            <label for="suv" class="label">Suv / Truck</label> <br><br>
+
+            <h2 id="type">Service Type</h2>
+
+            <input type="radio" id="interior" name="service" value="interior" class="radio">
+            <label for="interior" class="label">Interior Deep Clean</label> <br><br>
+            <input type="radio" id="exterior" name="service" value="exterior" class="radio">
+            <label for="exterior" class="label">Exterior Clean with Wheel and Tire Shine</label> <br><br>
+            <input type="radio" id="both" name="service" value="both" class="radio">
+            <label for="both" class="label">Both Services</label> <br><br>
+
+            <h2 id="type">Contact</h2>
+
+            <input type="text" id="contact" placeholder="Please input your phone number"> <br><br>
+            
+            <button type="submit" id="submit">Place Order</button>
+        </form>
+    </div>
+
+        <script>
+
+            const prices = {
+                sedan: {
+                    interior: 120,
+                    exterior: 80,
+                    both: 160
+                },
+                crossover: {
+                    interior: 130,
+                    exterior: 90,
+                    both: 170
+                },
+                suv: {  
+                    interior: 150,
+                    exterior: 120,
+                    both: 190
+                }
+            }
+
+            const form = document.getElementById('form')
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault()
+                const vehicle = document.querySelector('input[name="vehicle"]:checked').value
+                if (!vehicle) return alert("Please select a Vehicle Type")
+                
+                const service = document.querySelector('input[name="service"]:checked').value
+                if (!service) return alert("Please select a Service Type")
+                
+
+                const price = prices[vehicle][service]
+                
+                window.location.href = `./ordered.html?vehicle=${vehicle}&service=${service}&number=${document.getElementById('contact').value}`
+            })
+        </script>
+        
+</body>
+</html>
