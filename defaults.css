@@ -15,6 +15,10 @@ body {
     font-size: large;
 }
 
+.header-container {
+    text-align: center;
+}
+
 #h2 {
     text-align: center;
 }
