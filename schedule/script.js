@@ -52,34 +52,114 @@ form.addEventListener('submit', form => {
     if(!vehicle) return alert('Please select a vehicle')
     
     document.write(`
-
-    <head>
-    
-        <title>Cleaning Scheduled</title>
-        <link rel="icon" href="../assets/favicon.png">
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="../defaults.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    
-    </head>
     
     <img src='../assets/logo2.png' alt='logo' id='logo'>
     <h2 id='h2'>Order Details</h2>
     
     <div class='p-container'>
     
-        <p class='p'><b>Vehicle:</b> ${vehicle}</p> <br>
+        <p class='p'><b>Vehicle:</b> ${vehicle}</p>
         <p class='p'><b>Services:</b> ${services.join(', ')}</p>
         <p class='p'><b>Total: $${total}</b></p>
-        <p class='p'><b>Order Number:</b> ${orderNum}</p>
+        <p class='p'><b>Order Number:</b> ${orderNum}</p> <br>
+
+        <h2 id='h2>Order Info</h2>
 
         <p class='p'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
-        Please <a href='../contact/index.html'>contact us</a> with your order number to schedule your appointment. <br>
+        Please <a href='../contact/index.html'>contact us</a> with your order number to schedule your appointment. 
         Please allow up to 24 hours for response. We look forward to seeing you!
         </p>
     
     </div>
+
+    <style>
+    
+    .radio-box {
+        border-radius: 5px;
+    }
+    
+    .p-container {
+        text-align: center;
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .input-container {
+        text-align: center;
+    }
+    
+    .radio {
+        scale: 110%;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .label {
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #back {
+        text-align: center;
+        padding: 3%;
+    }
+    
+    #submit {
+        border-radius: 5px;
+        font-size: 105%;
+        padding: 1%;
+        margin: 10px;
+        background-color: #3399ff;
+        color: white;
+        border: none;
+    }
+    
+    #submit:hover {
+        background-color: darkblue
+    }
+    
+    .p {
+        text-align: center;
+        font-size: large;
+        padding-top: 1%;
+    }
+
+    #logo {
+        text-align: center;
+        margin:auto;
+        display: block;
+        scale: 100%;
+        padding-bottom: 1%;
+    }
+    
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #p {
+        text-align: center;
+        font-size: large;
+        padding-top: 1%;
+    }
+    
+    .header-container {
+        text-align: center;
+    }
+    
+    #h2 {
+        text-align: center;
+    }
+    
+    #back {
+        text-align: center;
+        padding: 3%;
+    }
+    
+    body button {
+        cursor: pointer
+    }
+
+    </style>
 
 
     `)
