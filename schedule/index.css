@@ -8,6 +8,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.input-container {
+    text-align: center;
+}
+
 .radio {
     scale: 110%;
     text-align: center;
@@ -17,4 +21,19 @@
 .label {
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#back {
+    text-align: center;
+    padding: 3%;
+}
+
+#submit {
+    border-radius: 5px;
+    font-size: 105%;
+    padding: 1%;
+    margin: 10px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
 }
