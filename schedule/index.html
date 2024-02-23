@@ -15,14 +15,24 @@
     <h2 id="h2">Schedule A Cleaning</h2>
     <div class="input-container">
         <form id="form">
-            <p class="input-header"></p>
+            <p class="input-header">Vehicle Type</p> <br><br>
             <input type="radio" id="sedan" name="vehicle" value="sedan" class="radio">
-            <label for="sedan">Sedan</label>
+            <label for="sedan">Sedan</label> <br>
+
             <input type="radio" id="crossover" name="vehicle" value="crossover" class="radio">
-            <label for="crossover">Crossover</label>
-            <input type="radio" id="suv" name="vehicle" value="suv" class="radio">
-            <label for="suv">SUV/Truck</label>
-            
+            <label for="crossover">Crossover</label> <br>
+
+            <input type="radio" id="suv" name="vehicle" value="suv" class="radio"> 
+            <label for="suv">SUV/Truck</label> <br><br>
+
+            <p class="input-header">Service (select 1 or more)</p> <br><br>
+            <input type="radio" id="interior" name="interior" value="interior" class="radio-box">
+            <label for="interior">Interior Clean</label> <br>
+            <input type="radio" id="exterior" name="exterior" value="exterior" class="radio-box">
+            <label for="exterior">Exterior Wash</label> <br>
+            <input type="radio" id="wheel" name="wheel" value="wheel" class="radio-box">
+            <label for="wheel">Wheel & Tire Shine</label> <br><br>
+
             <button id="submit" type="submit">Submit</button>
         </form>
     </div>
