@@ -47,8 +47,22 @@ form.addEventListener('submit', form => {
     total += prices[vehicle][services[2]] || 0
 
     const orderNum = Math.floor(Math.random() * 1000000)
+
+    if(services.length < 1) return alert('Please select a service')
+    if(!vehicle) return alert('Please select a vehicle')
     
     document.write(`
+
+    <head>
+    
+        <title>Cleaning Scheduled</title>
+        <link rel="icon" href="../assets/favicon.png">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../defaults.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    
+    </head>
     
     <img src='../assets/logo2.png' alt='logo' id='logo'>
     <h2 id='h2'>Order Details</h2>

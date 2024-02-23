@@ -41,3 +41,9 @@
 #submit:hover {
     background-color: darkblue
 }
+
+.p {
+    text-align: center;
+    font-size: large;
+    padding-top: 1%;
+}
