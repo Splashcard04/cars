@@ -5,11 +5,9 @@ const suv = document.getElementById('suv')
 
 form.addEventListener('submit', form => {
     form.preventDefault();
-    let vehicle;
-    [suv, crossover, sedan].forEach(x => {
-        if(x.checked) {
-            vehicle = x.name
-        }
-    })
+    let vehicle = '';
+    if(suv.checked) vehicle = `suv`
+    if(sedan.checked) vehicle = `sedan`
+    if(crossover.checked) vehicle = `checked`
     alert(`you vehicle is ${vehicle}`)
 })
