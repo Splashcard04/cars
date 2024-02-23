@@ -11,3 +11,5 @@ img.src = images[0];
 setInterval(() => {
     img.src = images[Math.floor(Math.random()*images.length)];
 }, 5000)
+
+localStorage.orders = []
