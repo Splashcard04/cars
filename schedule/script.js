@@ -49,7 +49,7 @@ form.addEventListener('submit', form => {
     const orderNum = Math.floor(Math.random() * 1000000)
 
     if(services.length === 0) return alert('Please select a service')
-    if(vehicle !== 'suv' | 'sedan' | 'crossover') return alert('Please select a vehicle')
+    if(!vehicle) return alert('Please select a vehicle')
     
     document.write(`
     
@@ -65,7 +65,7 @@ form.addEventListener('submit', form => {
 
         <h2 id='h2>Order Info</h2>
 
-        <p class='p'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
+        <p class='res'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
         Please <a href='../contact/index.html'>contact us</a> with your order number to schedule your appointment. 
         Please allow up to 24 hours for response. We look forward to seeing you!
         </p>
@@ -157,6 +157,12 @@ form.addEventListener('submit', form => {
     
     body button {
         cursor: pointer
+    }
+
+    .res {
+        text-align: center;
+        padding: 3%;
+        font-size: medium
     }
 
     </style>
