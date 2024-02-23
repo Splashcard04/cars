@@ -45,6 +45,26 @@ form.addEventListener('submit', form => {
     total += prices[vehicle][services[0]]
     total += prices[vehicle][services[1]] || 0
     total += prices[vehicle][services[2]] || 0
+
+    const orderNum = Math.floor(Math.random() * 1000000)
     
-    alert(`Total: $${total} <br> <button id='cont'>Continue</button>`)
+    document.write(`
+    
+    <img src='../assets/logo2.png' alt='logo' id='logo'>
+    <h2 id='h2'>Order Details</h2>
+    
+    <div class='p-container'>
+    
+        <p class='p'><b>Vehicle:</b> ${vehicle}</p> <br>
+        <p class='p'><b>Services:</b> ${services.join(', ')}</p>
+        <p class='p'><b>Total: $${total}</b></p>
+
+        <p class='p'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
+        Please <a href='../contact/index.html'>contact us</a> with your order number: ${orderNum} to schedule your appointment.
+        </p>
+    
+    </div>
+
+
+    `)
 })
