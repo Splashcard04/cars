@@ -32,7 +32,7 @@ form.addEventListener('submit', form => {
     let vehicle = '';
     if(suv.checked) vehicle = `suv`
     if(sedan.checked) vehicle = `sedan`
-    if(crossover.checked) vehicle = `checked`
+    if(crossover.checked) vehicle = `crossover`
 
     let services = [];
 
@@ -48,8 +48,8 @@ form.addEventListener('submit', form => {
 
     const orderNum = Math.floor(Math.random() * 1000000)
 
-    if(services.length < 1) return alert('Please select a service')
-    if(!vehicle) return alert('Please select a vehicle')
+    if(services.length === 0) return alert('Please select a service')
+    if(vehicle !== 'suv' | 'sedan' | 'crossover') return alert('Please select a vehicle')
     
     document.write(`
     
