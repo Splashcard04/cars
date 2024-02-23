@@ -37,3 +37,7 @@
     color: white;
     border: none;
 }
+
+#submit:hover {
+    background-color: darkblue
+}
