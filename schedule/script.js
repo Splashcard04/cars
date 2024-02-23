@@ -65,7 +65,7 @@ form.addEventListener('submit', form => {
 
         <h2 id='h2>Order Info</h2>
 
-        <p class='res'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
+        <p id='res'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
         Please <a href='../contact/index.html'>contact us</a> with your order number to schedule your appointment. 
         Please allow up to 24 hours for response. We look forward to seeing you!
         </p>
@@ -159,10 +159,10 @@ form.addEventListener('submit', form => {
         cursor: pointer
     }
 
-    .res {
+    #res {
         text-align: center;
         padding: 3%;
-        font-size: medium
+        font-size: medium;
     }
 
     </style>
