@@ -7,6 +7,26 @@ const interior = document.getElementById('interior')
 const exterior = document.getElementById('exterior')
 const wheel = document.getElementById('wheel')
 
+const prices = {
+    sedan: {
+        interior: 120,
+        exterior: 80,
+        wheel: 30
+    },
+    crossover: {
+        interior: 130,
+        exterior: 90,
+        wheel: 30
+    },
+    suv: {
+        interior: 150,
+        exterior: 120,
+        wheel: 30
+    }
+}
+
+let total = 0
+
 form.addEventListener('submit', form => {
     form.preventDefault();
     let vehicle = '';
@@ -21,6 +41,10 @@ form.addEventListener('submit', form => {
     if(wheel.checked) services.push('wheel')
 
 
-    alert(`you vehicle is ${vehicle}`)
+    
+    total += prices[vehicle][services[0]]
+    total += prices[vehicle][services[1]] || 0
+    total += prices[vehicle][services[2]] || 0
+    
+    alert(`Total: $${total} <br> <button id='cont'>Continue</button>`)
 })
-

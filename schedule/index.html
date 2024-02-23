@@ -26,14 +26,18 @@
             <label for="suv">SUV/Truck</label> <br><br>
 
             <p class="input-header">Service (select 1 or more)</p> <br><br>
-            <input type="radio" id="interior" name="interior" value="interior" class="radio-box">
+            <input type="checkbox" id="interior" name="interior" value="interior" class="radio-box">
             <label for="interior">Interior Clean</label> <br>
-            <input type="radio" id="exterior" name="exterior" value="exterior" class="radio-box">
+
+            <input type="checkbox" id="exterior" name="exterior" value="exterior" class="radio-box">
             <label for="exterior">Exterior Wash</label> <br>
-            <input type="radio" id="wheel" name="wheel" value="wheel" class="radio-box">
+
+            <input type="checkbox" id="wheel" name="wheel" value="wheel" class="radio-box">
             <label for="wheel">Wheel & Tire Shine</label> <br><br>
 
-            <button id="submit" type="submit">Submit</button>
+            <p id="total">Total: $0</p>
+
+            <button id="submit" type="submit">Place Order</button>
         </form>
     </div>
 
