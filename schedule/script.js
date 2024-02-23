@@ -58,9 +58,11 @@ form.addEventListener('submit', form => {
         <p class='p'><b>Vehicle:</b> ${vehicle}</p> <br>
         <p class='p'><b>Services:</b> ${services.join(', ')}</p>
         <p class='p'><b>Total: $${total}</b></p>
+        <p class='p'><b>Order Number:</b> ${orderNum}</p>
 
         <p class='p'>Thank you for choosing Clean Cars Olympia! In order to continue with your order: <br>
-        Please <a href='../contact/index.html'>contact us</a> with your order number: ${orderNum} to schedule your appointment.
+        Please <a href='../contact/index.html'>contact us</a> with your order number to schedule your appointment. <br>
+        Please allow up to 24 hours for response. We look forward to seeing you!
         </p>
     
     </div>
